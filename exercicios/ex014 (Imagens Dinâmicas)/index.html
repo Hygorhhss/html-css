@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--a tag <source> possui 3 atributos <media> (indica o tamanho maximo considerado para carregar a imagem indicado no srcset), srcser <indica a imagem que vai ser carregada quando o tamanho for atingido> e <type> (indica o tipo de media type da imagem que usamos)-->
+
+    <!--aula 32 - Imagens que se adaptam sozinhas-->
+
+    <!--tamanhos das imagens: 300x300, 700x700 e 1000x1000-->
+
+    <h1>imanges</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="image/png">
+    </picture>
+
+
+    <!--a tag <picture> permite que coloque vários atributos de <source> dentro contem a tag <img>-->
+
+    <!--Dentro do <picture> colocamos a tag <img> com a maior foto "padrão" que irá carregar,
+    Acima colocamos as variações das imagens (caso a imagem for menor que 1000px carrega m, se a imagen for menor que 750px carrega a p), Guanabara recomendar o "max-width:" (p,m,g)-->
+    
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    <h1>áudio</h1>
+
+    <audio src="media/audio.mp3" controls autoplay></audio>
+
+    <!--Podemos fazer de duas formas, acima de forma simples ou abaixo com mais configurações-->
+
+    <audio preload="metadata" controls autoplay loop>
+        <source src="media/audio.mp3" type="audio/mpeg">
+        <p>O audio não é compativel <a href="media/audio.mp3" download="video.mp4">Audio</a>
+        </p>
+    </audio>
+
+    <!--arquivos wav é muito grande, não vale a pena-->
+
+    <h1>código do guanabara</h1>
+    <audio preload="metadata" controls loop autoplay>
+        <source src="media/audio.mp3" type="audio.mpeg">
+        <source src="media/audio.ogg" type="audio/oog">
+        <source src="media/audio.mp3" type="audio.mpeg">
+        <p>infelizmente não foi possivel reproduzir arquivo.<a href="media/audio.mp3">clique aqui para baixar arquivo mp3</a></p>
+    </audio>
+
+    <!--A página vai carregar o audio na sequencia dentro da tag audio DE CIMA PARA BAIXO 
+        (mp3 / ogg e etc) -->
+
+    <!--Dentro da tag audio temos:
+        Preload (carregar ao abrir a página)
+        Metadata (Carrega as informações básicas do arquivo data, nome, duração e etc)
+        autoplay (carregar audio ao abrir a página)
+        controls (controles do áudio)
+        loop (loop de vídeo)-->
+
+</body>
+</html>

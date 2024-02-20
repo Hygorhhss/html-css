@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncoras</title>
+</head>
+<body>
+    <h1>Links e Âncoras</h1>
+
+    <a href="urldosite" hreflang="pt-br"></a>
+    <!--dentro do href colocamos a URL do outro site-->
+    <!--Colocamos o hreflang pois indica o idioma principal de um documento-->
+
+    <a href="urldosite" target="_blank"></a>
+    <!--mais utilizado _blank(direcionar para outra página) e _self(manter na mesma página)-->
+
+    <a href="urldosite" rel="next"></a> 
+    <!--indicar qual o direcionamento da página (next, prev, author, external e nofollow)-->
+
+    <a href="urldodownload" download="videobaile" type="video/mp4"></a>
+    <!--colocar no href o link do download, atributo de download e o type (tipo do arquivo)-->
+
+
+
+    <!--Código da aula 27-->
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">repositorio público no github</a></p>
+
+    <a href="https://youtube.com" target="_blank">Youtube</a>
+
+    <!--Código da aula 28-->
+    <h2>Link interno</h2>
+    <a href="pag02.html" rel="next">Segunda página</a>
+
+    <!--o atributo nofollow pode ser utilizado para uma propagando por exemplo para deixar claro para o mecanismo de buscar que você não quer perpetuar o link/site que você não deu aval-->
+    <p>Siga a página <a href="urldosite" target="_blank" rel="nofollow">Catuabeis</a></p>
+
+    <!--Código da aula 29-->
+    <h2>Link para download</h2>
+    <p>Segue o meu curriculo para <a href="pdf/Curriculo.pdf" download="file/pdf" type="application/pdf" target="_blank">download</a></p>
+
+    <p>Baixe <a href="pdf/Curriculo.pdf" download="Curriculo.pdf" type="application/pdf">o meu livro</a></p>
+    <!--o pdf em especifico só o arquivo na página não está fazendo o download apenas abrindo arquivo pq o navegador já reconhece-->
+    <!--Com o arquivo zip é possivel fazer o download-->
+
+
+</body>
+</html>
